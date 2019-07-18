@@ -1,0 +1,42 @@
+{
+  materials: [
+    {
+      name: 'JoinedMaterial_#3',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            0.80000000000000004,
+            0.80000000000000004,
+            0.80000000000000004,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 0.19611600000000001,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/osoted.obj',
+    name: 'osoted',
+    recenter: 'root',
+    scale: 0.35699399999999998,
+  },
+  version: '0.54:2',
+}

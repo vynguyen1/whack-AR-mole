@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity">
+
+    <!--<fragment android:name="com.google.ar.sceneform.ux.ArFragment"
+              android:id="@+id/ux_fragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/> -->
+
+    <fragment android:name="com.example.mosy.helpers.CustomArFragment"
+              android:id="@+id/ux_fragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+
+    <TextView android:id="@+id/scoreText"
+              android:text="@string/scoreDefault"
+              android:textSize="40sp"
+              android:textColor="@android:color/white"
+              android:background="@drawable/message_shape_round"
+              android:layout_margin="15dp"
+              android:paddingStart="10dp"
+              android:paddingEnd="10dp"
+              android:layout_gravity="top|start"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:id="@+id/timeText"
+              android:text="@string/timer"
+              android:textSize="40sp"
+              android:textColor="@android:color/white"
+              android:background="@drawable/message_shape_round"
+              android:layout_margin="15dp"
+              android:paddingStart="10dp"
+              android:paddingEnd="10dp"
+              android:layout_gravity="top|end"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+    <!--<SeekBar android:id="@+id/beamScale"
+             android:layout_gravity="bottom|start"
+             android:rotation="-90"
+             android:progress="1"
+             android:max="10"
+             android:layout_width="200dp"
+             android:layout_height="250dp"/> -->
+
+    <!--<RelativeLayout  android:id="@+id/testCanvas"
+                     android:layout_width="200dp"
+                     android:layout_height="200dp"
+                     android:layout_margin="15dp"
+                     android:background="@android:color/white"
+                     android:layout_gravity="bottom|start">
+
+        <View android:id="@+id/spotlight"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:background="@drawable/light_shape_circle"/>
+
+        <View android:id="@+id/object1"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:background="@drawable/objects_shape_circle"/>
+
+        <View android:id="@+id/object2"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:background="@drawable/objects_shape_circle"/>
+
+        <View android:id="@+id/object3"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:background="@drawable/objects_shape_circle"/>
+
+        <View android:id="@+id/object4"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:background="@drawable/objects_shape_circle"/>
+
+        <View android:id="@+id/object5"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:background="@drawable/objects_shape_circle"/>
+
+    </RelativeLayout> -->
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingBottom="15dp"
+                  android:layout_gravity="center_horizontal|bottom">
+
+        <Button android:id="@+id/playButton"
+                android:background="@drawable/btn_shape_round"
+                android:text="@string/buttonPlay"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"/>
+
+        <Button android:id="@+id/highScoreButton"
+                android:text="@string/buttonHighScore"
+                android:background="@drawable/btn_shape_round"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_width="150dp"
+                android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/messageText"
+              android:text="Game is finished!\nYour score:"
+              android:textSize="50sp"
+              android:textColor="@android:color/white"
+              android:gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:paddingTop="15dp"
+              android:paddingBottom="15dp"
+              android:paddingStart="30dp"
+              android:paddingEnd="30dp"
+              android:background="@drawable/btn_shape_round"/>
+
+    <io.github.controlwear.virtual.joystick.android.JoystickView
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/joystickView"
+            android:layout_width="285dp"
+            android:layout_height="285dp"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="bottom|start"
+            custom:JV_buttonColor="#FF6E40"
+            custom:JV_buttonSizeRatio="15%"
+            custom:JV_borderColor="#00796B"
+            custom:JV_backgroundColor="#009688"
+            custom:JV_borderWidth="4dp"
+            custom:JV_fixedCenter="false"/>
+
+    <!-- <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_gravity="bottom|end">
+
+        <SeekBar android:id="@+id/xValue"
+                 android:progress="50"
+                 android:max="255"
+                 android:layout_width="200dp"
+                 android:layout_height="wrap_content"
+                 android:padding="15dp"/>
+
+        <SeekBar android:id="@+id/yValue"
+                 android:progress="50"
+                 android:max="255"
+                 android:layout_width="200dp"
+                 android:layout_height="wrap_content"
+                 android:padding="15dp"/>
+
+    </LinearLayout> -->
+
+</FrameLayout>

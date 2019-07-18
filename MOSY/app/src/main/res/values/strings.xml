@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MOSY</string>
+
+    <string name="buttonPlay">Play</string>
+    <string name="buttonEndGame">End Game</string>
+
+    <string name="buttonHighScore">High Score</string>
+
+    <string name="messageFinished">Game is finished!</string>
+    <string name="messageScore">Your score is:</string>
+
+    <string name="timer">0:30</string>
+    <string name="scoreDefault">0</string>
+
+    <string name="highScoreTitle">Top 5 High Scores</string>
+    <string name="highScoreTableName">Name</string>
+    <string name="highScoreTableScore">Score</string>
+    <string name="scoreTop1">1.</string>
+    <string name="scoreTop2">2.</string>
+    <string name="scoreTop3">3.</string>
+    <string name="scoreTop4">4.</string>
+    <string name="scoreTop5">5.</string>
+
+    <string name="defaultValue">-</string>
+
+    <string name="newHighscoreText">New High Score!</string>
+    <string name="dialogName">Type in your name</string>
+    <string name="dialogButton">Enter</string>
+    <string name="dialogScoreText">Score:</string>
+</resources>
